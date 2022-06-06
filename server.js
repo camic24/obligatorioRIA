@@ -1,6 +1,7 @@
 //Install express server
 const express = require('express');
 const path = require('path');
+app.use(express.static('build'));
 
 const app = express();
 
@@ -8,8 +9,7 @@ const app = express();
 app.use(express.static('./dist/obligatorioria'));
 
 app.get('*', function (req, res) {
-    const index = path.join(__dirname, 'build', 'index.html');
-    res.sendFile(index);
+    res.sendFile('index.html');
   });
 
 // Start the app by listening on the default Heroku port
