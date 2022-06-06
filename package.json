@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "cd app && cd client && npm install && npm run build"
   },
   "engines": {
     "node": "14.18.0",
