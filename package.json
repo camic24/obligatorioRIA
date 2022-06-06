@@ -2,7 +2,6 @@
   "name": "obligatorioria",
   "version": "0.0.0",
   "scripts": {
-    "prestart": "next build",
     "start": "node index.js",
     "heroku-postbuild": "npm run build"
 
