@@ -2,10 +2,8 @@
   "name": "obligatorioria",
   "version": "0.0.0",
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "postinstall": "npm run build",
-    "start": "NODE_ENV=production node server.js"
+    "prestart": "next build",
+    "start": "next start -p ${PORT}"
   },
   "private": true,
   "dependencies": {
