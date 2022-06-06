@@ -23,12 +23,7 @@ export class CommonService {
         obj['instructions']=e['strInstructions'];
         obj['ingredients']=[];
         let ingObj = Object.keys(e);
-      //  for(var i =1;i<ingObj.length+1;i++){
-      //     if(ingObj[i]=="strIngredient"+i&&ingObj[]){
-
-      //     }
-      //  } 
-
+  
       if(e['strIngredient1']!=null&&e['strMeasure1']!=null){
         let tObj = {ingredient:e['strIngredient1'],measure:e['strMeasure1']}
         obj['ingredients'].push(tObj)

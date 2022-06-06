@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "3dedbe56-7d78-4970-ada4-fe4f6baf385d"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cocktaildb": {
+    "obligatorioRIA": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cocktaildb",
+            "outputPath": "dist/obligatorioRIA",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cocktaildb:build:production"
+              "browserTarget": "obligatorioRIA:build:production"
             },
             "development": {
-              "browserTarget": "cocktaildb:build:development"
+              "browserTarget": "obligatorioRIA:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cocktaildb:build"
+            "browserTarget": "obligatorioRIA:build"
           }
         },
         "test": {
@@ -110,5 +113,5 @@
       }
     }
   },
-  "defaultProject": "cocktaildb"
+  "defaultProject": "obligatorioRIA"
 }

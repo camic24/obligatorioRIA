@@ -1,8 +1,8 @@
-import { SearchComponent } from './pages/search/search.component';
+import { SearchComponent } from './components/search/search.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { VideoplayerComponent } from './videoplayer/videoplayer.component';
+import { HomeComponent } from './components/home/home.component';
+import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
 
 const routes: Routes = [
   {

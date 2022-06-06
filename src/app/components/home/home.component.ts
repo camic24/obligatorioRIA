@@ -1,4 +1,4 @@
-import { CommonService } from './../../services/common.service';
+import { CommonService } from '../../services/common.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
