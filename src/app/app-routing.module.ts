@@ -22,24 +22,21 @@ const routes: Routes = [
         path: "names/:q",
         component: SearchComponent,
         data:{
-          type:"name",
-          //image:"assets/ck.svg"
+          type:"name"
         }
       },
       {
         path: "ingredients/:q",
         component: SearchComponent,
         data:{
-          type:"ing",
-          //image:"assets/apple.svg"
+          type:"ing"
         }
       },
       {
         path: "category/:q",
         component: SearchComponent,
         data:{
-          type:"category",
-          //image:"assets/coco.svg"
+          type:"category"
         }
       }
     ],
