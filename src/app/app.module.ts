@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './components/search/search.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MatIconRegistry } from '@angular/material/icon';
+import { navbarComponent } from './components/navbar/navbar.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
@@ -45,7 +43,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
-import { RouteReuseStrategy } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { VgCoreModule } from '@videogular/ngx-videogular/core';//videoplayer
 import { VgControlsModule } from '@videogular/ngx-videogular/controls';
@@ -61,7 +58,7 @@ export function playerFactory() {
     AppComponent,
     HomeComponent,
     SearchComponent,
-    HeaderComponent,
+    navbarComponent,
     VideoplayerComponent,
     FooterComponent,
   ],

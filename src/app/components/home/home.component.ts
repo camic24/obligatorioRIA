@@ -1,6 +1,5 @@
 import { CommonService } from '../../services/common.service';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiserviceService } from 'src/app/services/apiservice.service';
 
@@ -10,16 +9,12 @@ import { ApiserviceService } from 'src/app/services/apiservice.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
   searchQuery:String="";
   selected:any="name"
   constructor(public router: Router,
-    public _api:ApiserviceService,
-    public com:CommonService) { }
-
-  ngOnInit(): void {
-  }
-
+              public _api:ApiserviceService,
+              public com:CommonService) { }
 
   onSearch(form:any){
     

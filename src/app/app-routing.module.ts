@@ -2,7 +2,6 @@ import { SearchComponent } from './components/search/search.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
 
 const routes: Routes = [
   {

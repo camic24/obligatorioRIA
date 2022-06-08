@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./videoplayer.component.scss']
 })
 
-export class VideoplayerComponent implements OnInit {
+export class VideoplayerComponent{
 
   videoItems = [{
     
@@ -34,7 +34,6 @@ export class VideoplayerComponent implements OnInit {
 
   constructor()  {}
 
-  ngOnInit(): void {} 
 
   videoPlayerInit(data: any) {
     this.data = data;
